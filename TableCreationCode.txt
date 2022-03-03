@@ -1,4 +1,4 @@
--dropdb GCCA
+DROP DATABASE GCCA
 CREATEDB GCCA
 
 CREATE TABLE Person(
@@ -40,9 +40,9 @@ CREATE TABLE Resource(
 CREATE TABLE PaymentData (
 	PaymentID INTEGER PRIMARY KEY,
 	UserID INTEGER,
-CONSTRAINT extraworkhere FOREIGN KEY (UserID) References Person(UserID),
+	CONSTRAINT extraworkhere FOREIGN KEY (UserID) References Person(UserID),
 	BillingAddress VARCHAR,
-	Amount INTEGER,
+	Amount NUMERIC(12,2),
 	PaymentDate DATE,
 	PaymentType VARCHAR);
 
@@ -75,7 +75,7 @@ CREATE TABLE Donation (
 	UserID INTEGER,
 	CONSTRAINT extraworkhere FOREIGN KEY (PaymentID) References PaymentData(PaymentID),
 	CONSTRAINT extraworkhere2 FOREIGN KEY (UserID) References Person(UserID),
-	Amount INTEGER,
+	Amount NUMERIC(12,2),
 	RecordDate DATE);
 
 \dt
