@@ -42,7 +42,7 @@ CREATE TABLE PaymentData (
 	UserID INTEGER,
 CONSTRAINT extraworkhere FOREIGN KEY (UserID) References Person(UserID),
 	BillingAddress VARCHAR,
-	Amount INTEGER,
+	Amount NUMERIC,
 	PaymentDate DATE,
 	PaymentType VARCHAR);
 
@@ -75,7 +75,7 @@ CREATE TABLE Donation (
 	UserID INTEGER,
 	CONSTRAINT extraworkhere FOREIGN KEY (PaymentID) References PaymentData(PaymentID),
 	CONSTRAINT extraworkhere2 FOREIGN KEY (UserID) References Person(UserID),
-	Amount INTEGER,
+	Amount NUMERIC,
 	RecordDate DATE);
 
 \dt
