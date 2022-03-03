@@ -3,7 +3,7 @@ CREATE TABLE Person(
 	UserID INTEGER PRIMARY KEY,
 	FullName VARCHAR,
 	Email VARCHAR,
-	Phone INTEGER, 
+	Phone VARCHAR, 
 	DateAdded DATE,
 	IsMember BOOLEAN,
 	IsStaff BOOLEAN);
