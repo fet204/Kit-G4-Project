@@ -30,7 +30,7 @@ CREATE TABLE Sales (
 	Item VARCHAR,
 	Quantity INTEGER,
 	Item2 VARCHAR,
-	Quantit INTEGER);
+	Quantit VARCHAR);
 
 CREATE TABLE Merchandise (
 	ItemName VARCHAR,
