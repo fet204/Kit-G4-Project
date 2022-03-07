@@ -1,19 +1,8 @@
 INSERT INTO Person VALUES 
-('1', 'Jill Killer', 'JillKileer@gmail.com', '2065551245', '2019-03-29', FALSE, FALSE),
-('2', 'Mark Lowen', 'lowen@msn.com', '', '2020-04-19', FALSE, FALSE),
-('3', 'Wendy Nelson', 'wnelson@yahoo.com', '4565551265', '2020-05-01', FALSE, FALSE),
-('4', 'Krystal Brown', 'krystalball@hotmail.com', '9045552211', '2021-05-20', FALSE, FALSE),
-('5', 'Bob Danielson', 'bd2035@gmail.com', '3605552030', '2020-06-10', FALSE, FALSE),
-('6', 'Ta Nguyen', 'tnguyen304@gmail.com', '', '2020-07-12', FALSE, FALSE),
-('7', 'Nichole Bradley', 'nicholeb@harvest.org', '2225552323', '2020-07-15', FALSE, FALSE);
-
-
-
-
-
-
-
-
-
-
-;
+('1', 'Jill Killer', 'JillKileer@gmail.com', '2065551245', '2019-03-29',
+('2', 'Mark Lowen', 'lowen@msn.com', '', '2020-04-19'),
+('3', 'Wendy Nelson', 'wnelson@yahoo.com', '4565551265', '2020-05-01'),
+('4', 'Krystal Brown', 'krystalball@hotmail.com', '9045552211', '2021-05-20'),
+('5', 'Bob Danielson', 'bd2035@gmail.com', '3605552030', '2020-06-10'),
+('6', 'Ta Nguyen', 'tnguyen304@gmail.com', '', '2020-07-12'),
+('7', 'Nichole Bradley', 'nicholeb@harvest.org', '2225552323', '2020-07-15');
