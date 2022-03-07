@@ -1,4 +1,4 @@
-INSERT INTO Person VALUES 
+INSERT INTO Merchandise VALUES 
 ('Earth Rise T-Shirt', 'T-shirt with earth rising over moon', '1 T-Shirt', '15.50', '20', '2020-02-15'),
 ('Earth Rise Puzzle', '1000 piece jigsaw puzzle of earth rising over moon', '1 box', '9.35', '15', '2020-03-01'),
 ('Endangered Habitats', 'Tabletop book', '1 book', '35.30', '25', '2020-03-01'),
