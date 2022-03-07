@@ -1,4 +1,4 @@
-INSERT INTO Sales VALUES 
+INSERT INTO Donations VALUES 
 ('Hamid Brown', 'hamidb@outlook.com', '2020-08-14', '10.00'),
 ('Ha Li', 'hali@gmail.com', '2020-10-15', '200.00'),
 ('Ken Jackson', 'kj202@yahoo.com', '2020-10-15', '15.00'),
