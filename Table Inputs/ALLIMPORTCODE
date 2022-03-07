@@ -1,0 +1,44 @@
+INSERT INTO Comments VALUES 
+('2020-10-20', 'Nichole Bradey', 'Climate.nasa.gov', 'This site is gorgeous and useful. Well worth the time to visit and explore its features.'),
+('2020-10-22', 'Wendy Nelson', '', 'I attended the Convention on Climate policy last year and it was quite enlightening. They had discussions from several high ranking scientists and politicians. Worth the price.');
+
+INSERT INTO Donations VALUES 
+('Hamid Brown', 'hamidb@outlook.com', '2020-08-14', '10.00'),
+('Ha Li', 'hali@gmail.com', '2020-10-15', '200.00'),
+('Ken Jackson', 'kj202@yahoo.com', '2020-10-15', '15.00'),
+('Wendy Nelson', 'windynelson@morningstar.org	', '2020-10-16', '135.00'),
+('Ken Jackson', 'kj202@yahoo.com', '2022-03-02', '15.00');
+
+INSERT INTO Events VALUES 
+('Convention on Climate Policy', 'Room 313 Convention Center 200 Pike Street Seattle, WA, 98122', '2022-12-03', 'Price 250.00 per attendee'),
+('UN Report on Climate Progress', 'UN Convention House 2 UN Plaza New York, NY, 00231', '2022-01-13', 'Price Free, but limited seats');
+
+INSERT INTO Members VALUES 
+('Jill Killer', 'JillKileer@gmail.com', '2065551245', '2019-03-29'),
+('Mark Lowen', 'lowen@msn.com', '', '2020-04-19'),
+('Wendy Nelson', 'wnelson@yahoo.com', '4565551265', '2020-05-01'),
+('Krystal Brown', 'krystalball@hotmail.com', '9045552211', '2021-05-20'),
+('Bob Danielson', 'bd2035@gmail.com', '3605552030', '2020-06-10'),
+('Ta Nguyen', 'tnguyen304@gmail.com', '', '2020-07-12'),
+('Nichole Bradley', 'nicholeb@harvest.org', '2225552323', '2020-07-15');
+
+INSERT INTO Merchandise VALUES 
+('Earth Rise T-Shirt', 'T-shirt with earth rising over moon', '1 T-Shirt', '15.50', '20', '2020-02-15'),
+('Earth Rise Puzzle', '1000 piece jigsaw puzzle of earth rising over moon', '1 box', '9.35', '15', '2020-03-01'),
+('Endangered Habitats', 'Tabletop book', '1 book', '35.30', '25', '2020-03-01'),
+('Last Views', '4k UHD documentary on endangered species', '1 disc', '23.90', '10', '2020-04-12'),
+('Call to Action', 'Book on climate change action', '1 book', '6.45', '30', '2020-04-15');
+
+INSERT INTO Resources VALUES 
+('Partnership for Energy progress', 'https://www.pepnw.org/about-us/', 'The Partnership for Energy Progress is a collaboration of utilities, farmers, workers, small and large businesses, and community advocates across the Northwest. Our goal is to communicate the work we do to provide reliable, affordable energy to homes and businesses, and highlight the progress we’re making to address climate change.', '2020-09-12', 'Jill Keller'),
+('Siemens Company', 'https://new.siemens.com/us/en/company/sustainability/environmental-action.html', 'Siemens is supporting the Decade of Action to accelerate the adoption of sustainable technologies so our customers, our communities and our employees can lead the U.S. towards a low-carbon future.', '2020-10-09', 'Jill Keller'),
+('UN Environment Program', 'https://www.unep-wcmc.org/', 'UN Environment Programme World Conservation Monitoring Centre is a world leader in biodiversity knowledge. It works with scientists and policy makers worldwide to place biodiversity at the heart of environment and development decision-making to enable enlightened choices for people and the planet.', '2020-10-18', 'Bob Danielson'),
+('NASA on Climate Change', 'https://climate.nasa.gov/', 'Explore a real-time data visualization of NASA’s Earth-orbiting satellites and the data they collect about climate change.', '2020-10-25', 'Ta Nguyen');
+
+INSERT INTO Sales VALUES 
+('Lindsey Peterson', 'lp@msn.com', 'Earth Rise puzzle', '2', 'Earth Rise T-shirt', '1'),
+('Krystal Brown', 'Krystalball@hotmail.com', 'Earth rise T-shirt', '3', '', ''),
+('Marcus Tellerman', 'mtellerman@yahoo.com', 'last views', '1', '', '');
+
+
+
