@@ -33,7 +33,7 @@ INSERT INTO Resources VALUES
 ('Partnership for Energy progress', 'https://www.pepnw.org/about-us/', 'The Partnership for Energy Progress is a collaboration of utilities, farmers, workers, small and large businesses, and community advocates across the Northwest. Our goal is to communicate the work we do to provide reliable, affordable energy to homes and businesses, and highlight the progress we are making to address climate change.', '2020-09-12', 'Jill Keller'),
 ('Siemens Company', 'https://new.siemens.com/us/en/company/sustainability/environmental-action.html', 'Siemens is supporting the Decade of Action to accelerate the adoption of sustainable technologies so our customers, our communities and our employees can lead the U.S. towards a low-carbon future.', '2020-10-09', 'Jill Keller'),
 ('UN Environment Program', 'https://www.unep-wcmc.org/', 'UN Environment Programme World Conservation Monitoring Centre is a world leader in biodiversity knowledge. It works with scientists and policy makers worldwide to place biodiversity at the heart of environment and development decision-making to enable enlightened choices for people and the planet.', '2020-10-18', 'Bob Danielson'),
-('NASA on Climate Change', 'https://climate.nasa.gov/', 'Explore a real-time data visualization of NASA’s Earth-orbiting satellites and the data they collect about climate change.', '2020-10-25', 'Ta Nguyen');
+('NASA on Climate Change', 'https://climate.nasa.gov/', 'Explore a real-time data visualization of NASAs Earth-orbiting satellites and the data they collect about climate change.', '2020-10-25', 'Ta Nguyen');
 
 INSERT INTO Sales VALUES 
 ('Lindsey Peterson', 'lp@msn.com', 'Earth Rise puzzle', '2', 'Earth Rise T-shirt', '1'),
