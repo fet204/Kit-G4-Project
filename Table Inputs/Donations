@@ -1,0 +1,6 @@
+INSERT INTO Sales VALUES 
+('Hamid Brown', 'hamidb@outlook.com', '2020-08-14', '10.00'),
+('Ha Li', 'hali@gmail.com', '2020-10-15', '200.00'),
+('Ken Jackson', 'kj202@yahoo.com', '2020-10-15', '15.00'),
+('Wendy Nelson', 'windynelson@morningstar.org	', '2020-10-16', '135.00'),
+('Ken Jackson', 'kj202@yahoo.com', '2022-03-02', '15.00');
