@@ -1,41 +1,28 @@
 
-CREATE TABLE Person(
-	UserID INTEGER PRIMARY KEY,
+CREATE TABLE Members (
 	FullName VARCHAR,
 	Email VARCHAR,
 	Phone VARCHAR, 
 	DateAdded DATE);
 
-CREATE TABLE Event (
-	UserID INTEGER,
-	CONSTRAINT extraworkhere FOREIGN KEY (UserID) References Person (UserID),
+CREATE TABLE Events (
 	EventName VARCHAR,
 	Location VARCHAR,
 	Date DATE,
-	Description VARCHAR,
-	TIME TIME,
-	WebsiteLink VARCHAR,
-	Document VARCHAR,
-	Status INTEGER,
-	SubmittedBy VARCHAR);
+	Description VARCHAR);
 
-CREATE TABLE Comment ( 
-	UserID INTEGER,
-	CONSTRAINT extraworkhere FOREIGN KEY (UserID) References Person (UserID),
-	Status BOOLEAN,
+CREATE TABLE Comments ( 
 	CommentDate DATE,
 	Name VARCHAR,
 	WebsiteLink VARCHAR,
 	Description VARCHAR);
 
-CREATE TABLE Resource(
-	UserID INTEGER,
-	CONSTRAINT extraworkhere FOREIGN KEY (UserID) References Person (UserID),
-	Status INTEGER,
-	SubmittedBy VARCHAR,
-	CommentDate DATE,
-	InHouseInfo VARCHAR,
-	OutHouseInfo VARCHAR);
+CREATE TABLE Resources (
+	Title VARCHAR,
+	WebsiteLink VARCHAR,
+	Description VARCHAR,
+	DateAdded DATE,
+	MemberName VARCHAR);
 
 CREATE TABLE PaymentData (
 	PaymentID INTEGER PRIMARY KEY,
@@ -51,23 +38,15 @@ CREATE TABLE PaymentData (
 	DateAdded DATE,
 	FromWhom VARCHAR);
 
-CREATE TABLE Sale (
-	SaleID INTEGER PRIMARY KEY,
-	PaymentID INTEGER,
-	UserID INTEGER,
-	CONSTRAINT extraworkhere FOREIGN KEY (PaymentID) References 
-	PaymentData(PaymentID),
-	CONSTRAINT extraworkhere2 FOREIGN KEY (UserID) References Person(UserID),
-	ShippingAddress VARCHAR,
-	DatePurchased DATE,
-	DateShipped DATE,
+CREATE TABLE Sales (
 	Name VARCHAR,
 	Email VARCHAR,
 	Item VARCHAR,
-	Quantity INTEGER);
+	Quantity INTEGER,
+	Item2 VARCHAR,
+	Quantit INTEGER);
 
 CREATE TABLE Merchandise (
-	MerchandiseID INTEGER PRIMARY KEY,
 	ItemName VARCHAR,
 	Description VARCHAR,
 	Units VARCHAR,
@@ -82,15 +61,10 @@ CREATE TABLE LineItem (
 	CONSTRAINT extraworkhere2 FOREIGN KEY (MerchandiseID) References Merchandise(MerchandiseID),
 	Quantity INTEGER);
 
-CREATE TABLE Donation (
-	PaymentID INTEGER, 
-	UserID INTEGER,
-	CONSTRAINT extraworkhere FOREIGN KEY (PaymentID) References PaymentData(PaymentID),
-	CONSTRAINT extraworkhere2 FOREIGN KEY (UserID) References Person(UserID),
-	Amount NUMERIC(12,2),
-	RecordDate DATE,
+CREATE TABLE Donations (
 	Name VARCHAR,
 	Email VARCHAR,
+	Date DATE,
 	PriceAmount  NUMERIC(12,2));
 
 \dt
