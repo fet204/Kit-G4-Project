@@ -1,3 +1,3 @@
 INSERT INTO Person VALUES 
-('1', 'Martin S', 'MS@gmail.com', '2532532253', '2022-03-03', TRUE, FALSE),
-('2', 'Man S', 'MS@gal.com', '2532552253', '2012-01-03', TRUE, TRUE);
+('1', 'Jill Killer', 'JillKileer@gmail.com', '2065551245', '2019-03-29', FALSE, FALSE),
+('2', 'Mark Lowen', 'lowen@msn.com', '', '2020-19-04', FALSE, FALSE);
