@@ -1,4 +1,4 @@
-INSERT INTO Person VALUES 
+INSERT INTO Members VALUES 
 ('1', 'Jill Killer', 'JillKileer@gmail.com', '2065551245', '2019-03-29'),
 ('2', 'Mark Lowen', 'lowen@msn.com', '', '2020-04-19'),
 ('3', 'Wendy Nelson', 'wnelson@yahoo.com', '4565551265', '2020-05-01'),
