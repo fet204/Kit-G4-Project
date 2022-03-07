@@ -4,9 +4,7 @@ CREATE TABLE Person(
 	FullName VARCHAR,
 	Email VARCHAR,
 	Phone VARCHAR, 
-	DateAdded DATE,
-	IsMember BOOLEAN,
-	IsStaff BOOLEAN);
+	DateAdded DATE);
 
 CREATE TABLE Event (
 	UserID INTEGER,
