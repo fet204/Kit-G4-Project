@@ -24,20 +24,6 @@ CREATE TABLE Resources (
 	DateAdded DATE,
 	MemberName VARCHAR);
 
-CREATE TABLE PaymentData (
-	PaymentID INTEGER PRIMARY KEY,
-	UserID INTEGER,
-	CONSTRAINT extraworkhere FOREIGN KEY (UserID) References Person(UserID),
-	BillingAddress VARCHAR,
-	Amount NUMERIC(12,2),
-	PaymentDate DATE,
-	PaymentType VARCHAR,
-	Name VARCHAR,
-	WebsiteLink VARCHAR,
-	Description VARCHAR,
-	DateAdded DATE,
-	FromWhom VARCHAR);
-
 CREATE TABLE Sales (
 	Name VARCHAR,
 	Email VARCHAR,
@@ -53,13 +39,6 @@ CREATE TABLE Merchandise (
 	PricePerUnit NUMERIC(12,2),
 	Quantity INTEGER,
 	EntryDate DATE);
-
-CREATE TABLE LineItem (
-	SaleID INTEGER,
-	MerchandiseID INTEGER,
-	CONSTRAINT extraworkhere FOREIGN KEY (SaleID) References Sale(SaleID),
-	CONSTRAINT extraworkhere2 FOREIGN KEY (MerchandiseID) References Merchandise(MerchandiseID),
-	Quantity INTEGER);
 
 CREATE TABLE Donations (
 	Name VARCHAR,
