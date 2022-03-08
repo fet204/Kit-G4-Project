@@ -1,3 +1,15 @@
-INSERT INTO Comments VALUES 
+INSERT INTO Comment VALUES 
 ('2020-10-20', 'Nichole Bradey', 'Climate.nasa.gov', 'This site is gorgeous and useful. Well worth the time to visit and explore its features.'),
 ('2020-10-22', 'Wendy Nelson', '', 'I attended the Convention on Climate policy last year and it was quite enlightening. They had discussions from several high ranking scientists and politicians. Worth the price.');
+
+
+
+
+
+
+
+INSERT INTO Comment VALUES 
+('7', 'nnnnnnnnnnn', 'nnnnnnnnnnn'),
+('3', 'nnnnnnnnnnn', 'nnnnnnnnnnn');
+
+
