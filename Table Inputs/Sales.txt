@@ -1,4 +1,0 @@
-INSERT INTO Sales VALUES 
-('Lindsey Peterson', 'lp@msn.com', 'Earth Rise puzzle', '2', 'Earth Rise T-shirt', '1'),
-('Krystal Brown', 'Krystalball@hotmail.com', 'Earth rise T-shirt', '3', '', ''),
-('Marcus Tellerman', 'mtellerman@yahoo.com', 'last views', '1', '', '');

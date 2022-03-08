@@ -22,24 +22,27 @@ CREATE TABLE Event (
 CREATE TABLE Comment ( 
 	UserID INTEGER,
 	CONSTRAINT extraworkhere FOREIGN KEY (UserID) References Person (UserID),
-	Status BOOLEAN,
-	CommentDate DATE);
+	Status INTEGER,
+	CommentDate DATE,
+	Comment VARCHAR);
 
 CREATE TABLE Resource(
 	UserID INTEGER,
 	CONSTRAINT extraworkhere FOREIGN KEY (UserID) References Person (UserID),
-	Status INTEGER,
-	SubmittedBy VARCHAR,
+	CommentTitle VARCHAR,
+	Website VARCHAR,
+	Comment VARCHAR,
 	CommentDate DATE,
-	InHouseInfo VARCHAR,
-	OutHouseInfo VARCHAR);
+	SubmittedBy VARCHAR,
+	Status INTEGER,
+	InHouseInfo BOOLEAN);
 
 CREATE TABLE PaymentData (
 	PaymentID INTEGER PRIMARY KEY,
 	UserID INTEGER,
 	CONSTRAINT extraworkhere FOREIGN KEY (UserID) References Person(UserID),
 	BillingAddress VARCHAR,
-	Amount NUMERIC(12,2),
+	Amount NUMERIC(14,2),
 	PaymentDate DATE,
 	PaymentType VARCHAR);
 
@@ -47,9 +50,9 @@ CREATE TABLE Sale (
 	SaleID INTEGER PRIMARY KEY,
 	PaymentID INTEGER,
 	UserID INTEGER,
-	CONSTRAINT extraworkhere FOREIGN KEY (PaymentID) References 
-	PaymentData(PaymentID),
+	CONSTRAINT extraworkhere FOREIGN KEY (PaymentID) References PaymentData(PaymentID),
 	CONSTRAINT extraworkhere2 FOREIGN KEY (UserID) References Person(UserID),
+	ItemName VARCHAR,
 	ShippingAddress VARCHAR,
 	DatePurchased DATE,
 	DateShipped DATE);
@@ -58,7 +61,10 @@ CREATE TABLE Merchandise (
 	MerchandiseID INTEGER PRIMARY KEY,
 	ItemName VARCHAR,
 	Description VARCHAR,
-	Stock INTEGER);
+	Units VARCHAR,
+	PricePerUnit NUMERIC(14,2),
+	Quantity INTEGER,
+	EntryDate DATE);
 
 CREATE TABLE LineItem (
 	SaleID INTEGER,
@@ -72,7 +78,7 @@ CREATE TABLE Donation (
 	UserID INTEGER,
 	CONSTRAINT extraworkhere FOREIGN KEY (PaymentID) References PaymentData(PaymentID),
 	CONSTRAINT extraworkhere2 FOREIGN KEY (UserID) References Person(UserID),
-	Amount NUMERIC(12,2),
+	Amount NUMERIC(14,2),
 	RecordDate DATE);
 
 \dt
