@@ -1,0 +1,1 @@
+Select dateadded from person where dateadded >= '2020-10-05';
