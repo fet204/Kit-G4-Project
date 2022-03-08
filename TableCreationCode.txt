@@ -29,9 +29,12 @@ CREATE TABLE Comment (
 CREATE TABLE Resource(
 	UserID INTEGER,
 	CONSTRAINT extraworkhere FOREIGN KEY (UserID) References Person (UserID),
-	Status INTEGER,
-	SubmittedBy VARCHAR,
+	CommentTitle VARCHAR,
+	Website VARCHAR,
+	Comment VARCHAR,
 	CommentDate DATE,
+	SubmittedBy VARCHAR,
+	Status INTEGER,
 	InHouseInfo BOOLEAN);
 
 CREATE TABLE PaymentData (
@@ -47,9 +50,9 @@ CREATE TABLE Sale (
 	SaleID INTEGER PRIMARY KEY,
 	PaymentID INTEGER,
 	UserID INTEGER,
-	CONSTRAINT extraworkhere FOREIGN KEY (PaymentID) References 
-	PaymentData(PaymentID),
+	CONSTRAINT extraworkhere FOREIGN KEY (PaymentID) References PaymentData(PaymentID),
 	CONSTRAINT extraworkhere2 FOREIGN KEY (UserID) References Person(UserID),
+	ItemName VARCHAR,
 	ShippingAddress VARCHAR,
 	DatePurchased DATE,
 	DateShipped DATE);
@@ -58,8 +61,10 @@ CREATE TABLE Merchandise (
 	MerchandiseID INTEGER PRIMARY KEY,
 	ItemName VARCHAR,
 	Description VARCHAR,
-	Stock INTEGER,
-	Price NUMERIC(14,2));
+	Units VARCHAR,
+	PricePerUnit NUMERIC(14,2),
+	Quantity INTEGER,
+	EntryDate DATE);
 
 CREATE TABLE LineItem (
 	SaleID INTEGER,
