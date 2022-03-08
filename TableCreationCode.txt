@@ -1,49 +1,78 @@
-
-CREATE TABLE Members (
+CREATE TABLE Person(
+	UserID INTEGER PRIMARY KEY,
 	FullName VARCHAR,
 	Email VARCHAR,
 	Phone VARCHAR, 
-	DateAdded DATE);
-
-CREATE TABLE Events (
-	EventName VARCHAR,
-	Location VARCHAR,
-	Date DATE,
-	Description VARCHAR);
-
-CREATE TABLE Comments ( 
-	CommentDate DATE,
-	Name VARCHAR,
-	WebsiteLink VARCHAR,
-	Description VARCHAR);
-
-CREATE TABLE Resources (
-	Title VARCHAR,
-	WebsiteLink VARCHAR,
-	Description VARCHAR,
 	DateAdded DATE,
-	MemberName VARCHAR);
+	IsMember BOOLEAN,
+	IsStaff BOOLEAN);
 
-CREATE TABLE Sales (
-	Name VARCHAR,
-	Email VARCHAR,
-	Item VARCHAR,
-	Quantity INTEGER,
-	Item2 VARCHAR,
-	Quantit VARCHAR);
+CREATE TABLE Event (
+	UserID INTEGER,
+	CONSTRAINT extraworkhere FOREIGN KEY (UserID) References Person (UserID),
+	Date DATE,
+	Location VARCHAR,
+	Description VARCHAR,
+	TIME TIME,
+	WebsiteLink VARCHAR,
+	Document VARCHAR,
+	Status INTEGER,
+	SubmittedBy VARCHAR);
+
+CREATE TABLE Comment ( 
+	UserID INTEGER,
+	CONSTRAINT extraworkhere FOREIGN KEY (UserID) References Person (UserID),
+	Status BOOLEAN,
+	CommentDate DATE);
+
+CREATE TABLE Resource(
+	UserID INTEGER,
+	CONSTRAINT extraworkhere FOREIGN KEY (UserID) References Person (UserID),
+	Status INTEGER,
+	SubmittedBy VARCHAR,
+	CommentDate DATE,
+	InHouseInfo VARCHAR,
+	OutHouseInfo VARCHAR);
+
+CREATE TABLE PaymentData (
+	PaymentID INTEGER PRIMARY KEY,
+	UserID INTEGER,
+	CONSTRAINT extraworkhere FOREIGN KEY (UserID) References Person(UserID),
+	BillingAddress VARCHAR,
+	Amount NUMERIC(12,2),
+	PaymentDate DATE,
+	PaymentType VARCHAR);
+
+CREATE TABLE Sale (
+	SaleID INTEGER PRIMARY KEY,
+	PaymentID INTEGER,
+	UserID INTEGER,
+	CONSTRAINT extraworkhere FOREIGN KEY (PaymentID) References 
+	PaymentData(PaymentID),
+	CONSTRAINT extraworkhere2 FOREIGN KEY (UserID) References Person(UserID),
+	ShippingAddress VARCHAR,
+	DatePurchased DATE,
+	DateShipped DATE);
 
 CREATE TABLE Merchandise (
+	MerchandiseID INTEGER PRIMARY KEY,
 	ItemName VARCHAR,
 	Description VARCHAR,
-	Units VARCHAR,
-	PricePerUnit NUMERIC(12,2),
-	Quantity INTEGER,
-	EntryDate DATE);
+	Stock INTEGER);
 
-CREATE TABLE Donations (
-	Name VARCHAR,
-	Email VARCHAR,
-	Date DATE,
-	PriceAmount  NUMERIC(12,2));
+CREATE TABLE LineItem (
+	SaleID INTEGER,
+	MerchandiseID INTEGER,
+	CONSTRAINT extraworkhere FOREIGN KEY (SaleID) References Sale(SaleID),
+	CONSTRAINT extraworkhere2 FOREIGN KEY (MerchandiseID) References Merchandise(MerchandiseID),
+	Quantity INTEGER);
+
+CREATE TABLE Donation (
+	PaymentID INTEGER, 
+	UserID INTEGER,
+	CONSTRAINT extraworkhere FOREIGN KEY (PaymentID) References PaymentData(PaymentID),
+	CONSTRAINT extraworkhere2 FOREIGN KEY (UserID) References Person(UserID),
+	Amount NUMERIC(12,2),
+	RecordDate DATE);
 
 \dt
