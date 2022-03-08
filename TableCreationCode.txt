@@ -59,7 +59,7 @@ CREATE TABLE Merchandise (
 	ItemName VARCHAR,
 	Description VARCHAR,
 	Stock INTEGER,
-	Price NUMBERIC(14,2));
+	Price NUMERIC(14,2));
 
 CREATE TABLE LineItem (
 	SaleID INTEGER,
