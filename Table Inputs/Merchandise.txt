@@ -4,3 +4,12 @@ INSERT INTO Merchandise VALUES
 ('3', 'Endangered Habitats', 'Tabletop book', '1 book', '35.30', '25', '2020-03-01'),
 ('4', 'Last Views', '4k UHD documentary on endangered species', '1 disc', '23.90', '10', '2020-04-12'),
 ('5', 'Call to Action', 'Book on climate change action', '1 book', '6.45', '30', '2020-04-15');
+
+
+
+
+
+
+
+
+
