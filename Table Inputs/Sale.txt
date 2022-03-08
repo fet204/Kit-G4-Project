@@ -5,4 +5,3 @@ INSERT INTO Sale VALUES
 ('4', '3', '9', 'last views', '2020 North Street San Francisco, CA. 99122', '2020-10-30', '2020-10-30');
 
 
-
