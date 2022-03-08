@@ -5,4 +5,10 @@ INSERT INTO Person VALUES
 ('4', 'Krystal Brown', 'krystalball@hotmail.com', '9045552211', '2021-05-20'),
 ('5', 'Bob Danielson', 'bd2035@gmail.com', '3605552030', '2020-06-10'),
 ('6', 'Ta Nguyen', 'tnguyen304@gmail.com', '', '2020-07-12'),
-('7', 'Nichole Bradley', 'nicholeb@harvest.org', '2225552323', '2020-07-15');
+('7', 'Nichole Bradley', 'nicholeb@harvest.org', '2225552323', '2020-07-15'),
+('8', 'Lindsey Peterson', 'lp@msn.com', '', '2020-02-10'),
+('9', 'Marcus Tellerman', 'mtellerman@yahoo.com', '', '2020-10-30'),
+('10', 'Hamid Brown', 'hamidb@outlook.com', '', '2020-08-14'),
+('11', 'Ha Li', 'hali@gmail.com', '', '2020-10-15'),
+('12', 'Ken Jackson', 'kj202@yahoo.com', '', '2020-10-15'),
+('13', 'Wendy Nelson', 'windynelson@morningstar.org', '', '2020-10-16');
