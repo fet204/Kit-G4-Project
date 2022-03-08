@@ -23,7 +23,8 @@ CREATE TABLE Comment (
 	UserID INTEGER,
 	CONSTRAINT extraworkhere FOREIGN KEY (UserID) References Person (UserID),
 	Status INTEGER,
-	CommentDate DATE);
+	CommentDate DATE,
+	Comment VARCHAR);
 
 CREATE TABLE Resource(
 	UserID INTEGER,
@@ -31,8 +32,7 @@ CREATE TABLE Resource(
 	Status INTEGER,
 	SubmittedBy VARCHAR,
 	CommentDate DATE,
-	InHouseInfo VARCHAR,
-	OutHouseInfo VARCHAR);
+	InHouseInfo BOOLEAN);
 
 CREATE TABLE PaymentData (
 	PaymentID INTEGER PRIMARY KEY,
