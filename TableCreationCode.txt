@@ -39,7 +39,7 @@ CREATE TABLE PaymentData (
 	UserID INTEGER,
 	CONSTRAINT extraworkhere FOREIGN KEY (UserID) References Person(UserID),
 	BillingAddress VARCHAR,
-	Amount NUMERIC(12,2),
+	Amount NUMERIC(14,2),
 	PaymentDate DATE,
 	PaymentType VARCHAR);
 
@@ -58,7 +58,8 @@ CREATE TABLE Merchandise (
 	MerchandiseID INTEGER PRIMARY KEY,
 	ItemName VARCHAR,
 	Description VARCHAR,
-	Stock INTEGER);
+	Stock INTEGER,
+	Price NUMBERIC(14,2));
 
 CREATE TABLE LineItem (
 	SaleID INTEGER,
@@ -72,7 +73,7 @@ CREATE TABLE Donation (
 	UserID INTEGER,
 	CONSTRAINT extraworkhere FOREIGN KEY (PaymentID) References PaymentData(PaymentID),
 	CONSTRAINT extraworkhere2 FOREIGN KEY (UserID) References Person(UserID),
-	Amount NUMERIC(12,2),
+	Amount NUMERIC(14,2),
 	RecordDate DATE);
 
 \dt
