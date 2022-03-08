@@ -22,7 +22,7 @@ CREATE TABLE Event (
 CREATE TABLE Comment ( 
 	UserID INTEGER,
 	CONSTRAINT extraworkhere FOREIGN KEY (UserID) References Person (UserID),
-	Status BOOLEAN,
+	Status INTEGER,
 	CommentDate DATE);
 
 CREATE TABLE Resource(
