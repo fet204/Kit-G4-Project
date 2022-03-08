@@ -1,0 +1,9 @@
+INSERT INTO Sale VALUES 
+('1', '1', '8', 'Earth Rise puzzle', '2', '161 Brown Street, Chicago, IL, 80092	', '2020-02-10', '2020-04-10'),
+('2', '1', '8', 'Earth Rise T-shirt', '1', '161 Brown Street, Chicago, IL, 80092	', '2020-02-10', '2020-04-10'),
+('3', '2', '4', 'Earth rise T-shirt', '3', '120 Pine Street Seattle, WA 98122', '2020-09-10', '2019-12-10'),
+('4', '3', '9', 'last views', '1', '2020 North Street San Francisco, CA. 99122	', '2020-10-30', '2020-10-30');
+
+
+
+
