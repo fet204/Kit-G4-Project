@@ -7,7 +7,12 @@ INSERT INTO Person VALUES
 ('6', 'Ta Nguyen', 'tnguyen304@gmail.com', '', '2020-07-12'),
 ('7', 'Nichole Bradley', 'nicholeb@harvest.org', '2225552323', '2020-07-15'),
 ('8', 'Lindsey Peterson', 'lp@msn.com', '', '2020-02-10'),
-('9', 'Marcus Tellerman', 'mtellerman@yahoo.com', '', '2020-10-30');
+('9', 'Marcus Tellerman', 'mtellerman@yahoo.com', '', '2020-10-30'),
+('10', 'Hamid Brown', 'hamidb@outlook.com', '', '2020-08-14'),
+('11', 'Ha Li', 'hali@gmail.com', '', '2020-10-15'),
+('12', 'Ken Jackson', 'kj202@yahoo.com', '', '2020-10-15');
+('13', 'Wendy Nelson', 'windynelson@morningstar.org', '', '2020-10-16');
+
 
 INSERT INTO Event VALUES 
 ('1', '2022-12-03', 'Room 313 Convention Center 200 Pike Street Seattle, WA, 98122', 'Price 250.00 per attendee', '0000', '', '', '3', 'Unknown'),
@@ -24,9 +29,14 @@ INSERT INTO Resource VALUES
 ('6', 'NASA on Climate Change', 'https://climate.nasa.gov/', 'Explore a real-time data visualization of NASAs Earth-orbiting satellites and the data they collect about climate change.', '2020-10-25', 'Ta Nguyen', '3', FALSE);
 
 INSERT INTO PaymentData VALUES 
-('1', '8', '161 Brown Street, Chicago, IL, 80092', '200.52', '2020-10-02', 'VISA'),
-('2', '4', '303 South Market Seattle, WA, 98112', '40.54', '2020-10-09', 'PAYPAL'),
-('3', '9', '2020 North Street San Francisco, CA. 99122', '23.54', '2020-10-30', 'MASTERCARD');
+('1', '8', '161 Brown Street, Chicago, IL, 80092', '200.52', '2020-10-02', ''),
+('2', '4', '303 South Market Seattle, WA, 98112', '40.54', '2020-10-09', ''),
+('3', '9', '2020 North Street San Francisco, CA. 99122', '23.54', '2020-10-30', 'MASTERCARD'),
+('4', '10', '', '10.00', '2020-08-14', ''),
+('5', '11', '', '200.00', '2020-10-15', ''),
+('6', '12', '', '15.00', '2020-10-15', ''),
+('7', '13', '', '135.00', '2020-08-14', ''),
+('8', '12', '', '15.00', '2022-03-02', ''),
 
 INSERT INTO Sale VALUES 
 ('1', '1', '8', 'Earth Rise puzzle', '161 Brown Street, Chicago, IL, 80092', '2020-02-10', '2020-04-10'),
