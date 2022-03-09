@@ -1,1 +1,1 @@
-Select dateadded from person where dateadded >= '2020-10-05';
+Select dateadded From Person where dateadded >= '2020-01-01' AND dateadded < '2021-01-01';
