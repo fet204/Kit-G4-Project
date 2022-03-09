@@ -1,0 +1,1 @@
+INSERT INTO Event Values('3','2022-5-22','1000 5th Ave, New York, NY 10028','Price per attendee 200', '0000', '','','1','Unknown');
