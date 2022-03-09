@@ -1,0 +1,5 @@
+GCCA=# SELECT AVG(amount) FROM donation;
+         avg
+---------------------
+ 75.0000000000000000
+(1 row)
