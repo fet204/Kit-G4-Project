@@ -1,0 +1,4 @@
+update person set ismember = true where userid = 10;
+update person set ismember = true where userid = 11;
+update person set ismember = true where userid = 12;
+update person set ismember = true where userid = 13;
