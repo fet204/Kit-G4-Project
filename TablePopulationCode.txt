@@ -1,3 +1,5 @@
+-- FIXME: this was derived from doCC.bat, but duplicates code that is
+-- in the "Table Inputs" subdirectory. Please practice DRY and remove one!
 
 INSERT INTO Person VALUES 
 ('1', 'Jill Killer', 'JillKileer@gmail.com', '2065551245', '2019-03-29'),

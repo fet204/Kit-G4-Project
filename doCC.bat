@@ -13,4 +13,7 @@ psql -d group4 --file=TableCreationCode.txt
 
 :: Populate the tables:
 
+:: FIXME: TablePopulationCode.txt duplicates inserts in the
+:: "Table Inputs" subdirectory. Please practice DRY and remove one!
+
 psql -d group4 --file=TablePopulationCode.txt
