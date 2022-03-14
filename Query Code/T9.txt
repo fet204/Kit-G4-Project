@@ -1,4 +1,8 @@
-update person set ismember = true where userid = 10;
-update person set ismember = true where userid = 11;
-update person set ismember = true where userid = 12;
-update person set ismember = true where userid = 13;
+update 
+	person
+set
+	ismember = true
+from
+	donation
+where
+	donation.userid = person.userid and donation.amount > 20;
