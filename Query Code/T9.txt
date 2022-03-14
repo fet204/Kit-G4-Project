@@ -1,7 +1,8 @@
 update 
 	person
 set
-	ismember = true
+	ismember = true,
+	dateadded = CURRENT_DATE
 from
 	donation
 where
