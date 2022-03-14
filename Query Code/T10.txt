@@ -1,0 +1,3 @@
+Update Merchandise 
+SET ItemName = valueN, Description = valueN, Stock/amount/QTY = valueN
+WHERE MerchandiseID
