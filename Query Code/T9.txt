@@ -1,0 +1,8 @@
+update 
+	person
+set
+	ismember = true
+from
+	donation
+where
+	donation.userid = person.userid and donation.amount > 20;
