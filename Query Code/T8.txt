@@ -1,0 +1,11 @@
+SELECT 
+    SaleID
+    SUM(p.price) as sales_total
+FROM
+    Sale
+JOIN
+    LineITem
+GROUP BY 
+    ShippingAddress, DatePurchased, DateShipped
+ORDER BY
+   UserID
