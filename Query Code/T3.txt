@@ -1,0 +1,2 @@
+Select dateadded From Person where dateadded >= '2020-01-01' AND dateadded < '2021-01-01';
+Select dateadded FROM Person Where EXTRACT(YEAR FROM dateadded) = '2020';

@@ -1,0 +1,9 @@
+update 
+	person
+set
+	ismember = true,
+	dateadded = CURRENT_DATE
+from
+	donation
+where
+	donation.userid = person.userid and donation.amount > 20;

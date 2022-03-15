@@ -1,0 +1,1 @@
+Select sum(saleValue) FROM (SELECT Quantity * m.Price AS saleValue FROM Merchandise m INNER JOIN LineItem lines ON m.ID = lines.MerchID)
