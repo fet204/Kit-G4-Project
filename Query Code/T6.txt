@@ -2,25 +2,27 @@ SELECT
 	ppl, 
 	userid,
 	fullname, 
-	ismember
+	ismember 
 FROM(
 	SELECT 
-  	  total,
- 	   ppl
+  		total,
+ 		ppl
 	FROM( 
 
- 	   SELECT 
-  	      userid, SUM(amount) as total,
- 	       userid as ppl
-  	  FROM 
-  	      donation
-  	  GROUP BY
- 	       userid
+ 		SELECT 
+  	        	userid, SUM(amount) as total,
+ 	       		userid as ppl
+		FROM 
+  	      		donation
+  	  	GROUP BY
+ 	       		userid
 	) as fullTotal
-	Where 
-    	total > 20	
+	
+	WHERE 
+    		total > 20	
 ) as nonMems	
+
 INNER JOIN 
-	person ON userid = ppl
+	person ON userid = ppl 
 WHERE 
-	ismember = null;
+	ismember = false;
