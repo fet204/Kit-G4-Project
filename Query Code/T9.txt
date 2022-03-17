@@ -6,4 +6,4 @@ set
 from
 	donation
 where
-	donation.userid = person.userid and donation.amount > 20;
+	donation.userid = person.userid and donation.amount > 20 and ismember = false;
