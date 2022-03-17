@@ -51,6 +51,12 @@ INSERT INTO Merchandise VALUES
 ('4', 'Last Views', '4k UHD documentary on endangered species', '1 disc', '23.90', '10', '2020-04-12'),
 ('5', 'Call to Action', 'Book on climate change action', '1 book', '6.45', '30', '2020-04-15');
 
+INSERT INTO LineItem VALUES 
+('1', '2', '2'),
+('2', '1', '1'),
+('3', '1', '3'),
+('4', '4', '1');
+
 INSERT INTO Donation VALUES 
 ('4', '10', '10.00', '2020-08-14'),
 ('5', '11', '200.00', '2020-10-15'),
